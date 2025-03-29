@@ -1,31 +1,34 @@
 package models;
 
 public class Aluno {
-    private String nome;
-    private int idade;
-    private String matricula;
+    private String nomeAluno;
+    private int idadeAluno;
+    private String matriculaAluno;
 
-    public Aluno(String nome, int idade, String matricula) {
-        this.nome = nome;
-        this.idade = idade;
-        this.matricula = matricula;
+    public Aluno(String nomeAluno, int idadeAluno, String matriculaAluno) {
+        this.nomeAluno = nomeAluno;
+        this.idadeAluno = idadeAluno;
+        this.matriculaAluno = matriculaAluno;
     }
 
-    public String getNome() {
-        return nome;
+    public String getNomeAluno() {
+        return nomeAluno;
     }
 
-    public int getIdade() {
-        return idade;
+    public int getIdadeAluno() {
+        return idadeAluno;
     }
 
-    public String getMatricula() {
-        return matricula;
+    public String getMatriculaAluno() {
+        return matriculaAluno;
     }
 
     @Override
     public String toString() {
-        return "Aluno: " + nome + ", Idade: " + idade + ", Matrícula: " + matricula;
+        return "Aluno{" +
+                "nomeAluno='" + nomeAluno + '\'' +
+                ", idadeAluno=" + idadeAluno +
+                ", matriculaAluno='" + matriculaAluno + '\'' +
+                '}';
     }
-
 }

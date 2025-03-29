@@ -1,6 +1,6 @@
-import models.Aluno;
-import models.Escola;
-import models.Professor;
+import models.*;
+
+import java.util.ArrayList;
 
 public class Main {
     public static void main(String[] args) {
@@ -10,15 +10,23 @@ public class Main {
         Aluno aluno1 = new Aluno("Carlos Silva", 15, "A123");
         Aluno aluno2 = new Aluno("Mariana Souza", 16, "A456");
 
-        Professor professor1 = new Professor("João Pereira", "Matemática");
-        Professor professor2 = new Professor("Ana Costa", "Português");
+        Professor professor1 = new Professor("João Pereira", "Matemática", 15);
+        Professor professor2 = new Professor("Ana Costa", "Português", 15);
 
-        escola.adicionarAluno(aluno1);
-        escola.adicionarAluno(aluno2);
-        escola.adicionarProfessor(professor1);
-        escola.adicionarProfessor(professor2);
+        escola.adcionarAluno(aluno1);
+        escola.adcionarAluno(aluno2);
+        escola.adcionarProfessor(professor1);
+        escola.adcionarProfessor(professor2);
 
-        escola.listarAlunos();
-        escola.listarProfessores();
+        escola.listaDeAlunos();
+        System.out.println("-----------------------------------------------------------------------------------------------------------");
+        escola.listaDeProfessores();
+        System.out.println("-----------------------------------------------------------------------------------------------------------");
+
+
+
+
+        Turma turma = new Turma("Java",2025,professor1);
+        Disciplina disciplina = new Disciplina("Matemática",85,professor1);
     }
 }

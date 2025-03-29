@@ -3,35 +3,39 @@ package models;
 import java.util.ArrayList;
 
 public class Escola {
-    private String nome;
+    private String nomeEscola;
     private ArrayList<Aluno> alunos;
     private ArrayList<Professor> professores;
 
+
     public Escola(String nome) {
-        this.nome = nome;
+        this.nomeEscola = nome;
         this.alunos = new ArrayList<>();
         this.professores = new ArrayList<>();
+        ;
     }
 
-    public void adicionarAluno(Aluno aluno) {
+    public void adcionarAluno(Aluno aluno) {
         alunos.add(aluno);
+
     }
 
-    public void adicionarProfessor(Professor professor) {
+    public void adcionarProfessor(Professor professor) {
         professores.add(professor);
     }
 
-    public void listarAlunos() {
-        System.out.println("Lista de Alunos:");
+    public void listaDeAlunos() {
+        System.out.println("Lista de alunos da escola");
         for (Aluno aluno : alunos) {
             System.out.println(aluno);
         }
     }
 
-    public void listarProfessores() {
-        System.out.println("Lista de Professores:");
+    public void listaDeProfessores() {
+        System.out.println("Lista de professores da escola");
         for (Professor professor : professores) {
             System.out.println(professor);
         }
     }
+
 }
