@@ -16,6 +16,6 @@ public class Disciplina {
     public void exibirDetalhes() {
         System.out.println("Disciplina: " + nome);
         System.out.println("Carga Horária: " + cargaHoraria + " horas");
-        System.out.println("Professor Responsável: " + professor.getNomeProfessor());
+        System.out.println("Professor Responsável: " + professor.getNome());
     }
 }

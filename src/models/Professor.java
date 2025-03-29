@@ -1,36 +1,31 @@
 package models;
 
 public class Professor {
-    private String nomeProfessor;
-    private String disciplinaProfessor;
-    private int idadeProfessor;
+    private String nome;
+    private String disciplina;
+    private int idade;
 
-    public Professor(String nomeProfessor, String disciplinaProfessor, int idadeProfessor) {
-        this.nomeProfessor = nomeProfessor;
-        this.disciplinaProfessor = disciplinaProfessor;
-        this.idadeProfessor = idadeProfessor;
+    public Professor(String nome, String disciplina, int idade) {
+        this.nome = nome;
+        this.disciplina = disciplina;
+        this.idade = idade;
     }
 
-    public int getIdadeProfessor() {
-        return idadeProfessor;
+    public int getIdade() {
+        return idade;
     }
 
-    public String getNomeProfessor() {
-        return nomeProfessor;
+    public String getNome() {
+        return nome;
     }
 
-    public String getDisciplinaProfessor() {
-        return disciplinaProfessor;
+    public String getDisciplina() {
+        return disciplina;
     }
-
 
     @Override
     public String toString() {
-        return "Professor{" +
-                "nomeProfessor='" + nomeProfessor + '\'' +
-                "idadeProfessor=" + idadeProfessor +
-                ", disciplinaProfessor='" + disciplinaProfessor + '\'' +
-                '}';
+        return "Professor: " + nome + " | Idade: " + idade + " | Disciplina: " + disciplina;
     }
 }
 
