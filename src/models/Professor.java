@@ -1,25 +1,25 @@
 package models;
 
 public class Professor {
-    private String Nome;
-    private String Disciplina;
+    private String nome;
+    private String disciplina;
 
-    public Professor(String Nome, String Disciplina) {
-        this.Nome = Nome;
-        this.Disciplina = Disciplina;
+    public Professor(String nome, String disciplina) {
+        this.nome = nome;
+        this.disciplina = disciplina;
     }
 
     public String getNome() {
-        return Nome;
+        return nome;
     }
 
     public String getDisciplina() {
-        return Disciplina;
+        return disciplina;
     }
 
     @Override
-    public String toString(){
-        return "Professor" + Nome + "Disciplina" + Disciplina;
+    public String toString() {
+        return "Professor: " + nome + ", Disciplina: " + disciplina;
     }
 }
 
